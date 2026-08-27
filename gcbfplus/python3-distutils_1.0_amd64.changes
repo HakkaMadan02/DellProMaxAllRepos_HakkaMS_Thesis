@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Tue, 14 Apr 2026 03:46:17 -0700
+Source: python3-distutils
+Binary: python3-distutils
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 1.0
+Distribution: unstable
+Urgency: low
+Maintainer: Equivs Dummy Package Generator <kunalgarg@EN4232978UL>
+Changed-By: Equivs Dummy Package Generator <kunalgarg@EN4232978UL>
+Description:
+ python3-distutils - Dummy package to satisfy dependency
+Changes:
+ python3-distutils (1.0) unstable; urgency=low
+ .
+   * First version
+Checksums-Sha1:
+ 32d90746fd0428748f2fd031f1d80e9076799217 2030 python3-distutils_1.0_all.deb
+ 48fc9e9b30f504b4a83a605e2a1ca5d083e48ca1 6287 python3-distutils_1.0_amd64.buildinfo
+Checksums-Sha256:
+ 52e4f07c2b16666eae28d101a68fa9d6e4355c975e0bc71d021025dac6be97ab 2030 python3-distutils_1.0_all.deb
+ bb2c8d42c89cb4be72bf9d280ef29a91ebfaab4b98a7134e86ad22bd82c19b3e 6287 python3-distutils_1.0_amd64.buildinfo
+Files:
+ 78d8d86cbbe092150ae847f3846af1d6 2030 misc optional python3-distutils_1.0_all.deb
+ e3b5dad25bc8f95c970f21614c070e08 6287 misc optional python3-distutils_1.0_amd64.buildinfo

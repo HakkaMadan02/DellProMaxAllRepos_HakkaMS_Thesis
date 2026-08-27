@@ -1,0 +1,4 @@
+episode,env_episode,seed,reward,cost,labeled_safe_count,labeled_unsafe_count,labeled_total,labeled_safe_ratio,labeled_unsafe_ratio,safe_rate,finish_rate,success_rate
+0,0,1234,-18.416034698486328,0.0,2048,0,2048,1.0,0.0,1.0,0.875,0.875
+1,1,1235,-10.908125877380371,0.0,2046,2,2048,0.9990234375,0.0009765625,1.0,1.0,1.0
+2,2,1236,-16.99227523803711,0.0,2047,1,2048,0.99951171875,0.00048828125,1.0,0.875,0.875
