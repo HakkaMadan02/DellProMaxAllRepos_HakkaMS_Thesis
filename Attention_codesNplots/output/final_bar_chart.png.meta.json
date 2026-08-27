@@ -1,0 +1,4 @@
+{
+  "caption": "Final grouped bar chart for GCBF+ probe metrics",
+  "description": "Grouped bar chart for Message, Aggregate, Update, and CBF-Head using test accuracy, precision, and recall."
+}
