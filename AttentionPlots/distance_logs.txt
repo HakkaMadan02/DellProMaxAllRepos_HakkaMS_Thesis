@@ -1,0 +1,354 @@
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ python test.py --epi 1 --area-size 4 -n 35 --obs 35 --no-video --env DoubleIn
+tegrator --algo gcbf+ --log --cbf 0 --path /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+
+WARNING:2026-02-04 23:42:40,783:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+> Running test.py Namespace(num_agents=35, obs=35, area_size=4.0, max_step=None, path='/home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+', n_rays=32, alpha=1.0, max_travel=None, cbf=0, seed=1234, debug=False, cpu=False, u_ref=False, env='DoubleIntegrator', algo='gcbf+', step=None, epi=1, offset=0, no_video=True, nojit_rollout=False, log=True, dpi=100)
+number of agents to log:  35
+step:  1000
+jit rollout!
+Agent acceleration bounds alphai and alphaj 14.142136 14.142136
+Obstacle acceleration bounds 0.0
+state, node, edge lengths 257 257 257
+epi: 0, reward: -78.584, cost: 0.057, safe rate: 97.143%,finish rate: 51.429%, success rate: 51.429%
+reward: -78.584, min/max reward: -78.584/-78.584, cost: 0.057, min/max cost: 0.057/0.057, safe_rate: 97.143%, finish_rate: 51.429%, success_rate: 51.429%
+
+================================================================================
+ATTENTION ANALYSIS: Plotting attention weights vs distance
+================================================================================
+
+================================================================================
+Analyzing Attention for Agent 5 at Timestep 50
+================================================================================
+Graph extracted successfully
+  Number of nodes: 1191
+  Number of edges: 3570
+  Total attention weights: 3570
+
+================================================================================
+Analyzing Agent 5 - RECEIVER-BASED ATTENTION
+================================================================================
+Padding node ID: 1190
+Total nodes: 1191
+Total edges in graph: 3570
+Non-padding edges: 331
+
+Edges TO agent 5 (received from neighbors): 11
+Senders: [ 40 230 231 232 233 234 235 236 237 238 239]
+
+DEBUG: Determining edge types
+  agent_senders: [ 40 230 231 232 233 234 235 236 237 238 239]
+  node_types[agent_senders]: [1 2 2 2 2 2 2 2 2 2 2]
+  Edge type labels: ['goal', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle']
+
+================================================================================
+Agent 5 at Timestep 50 - RESULTS
+================================================================================
+Total incoming edges: 11
+  From agents: 0
+  From goals: 1
+  From obstacles: 10
+
+Distance statistics:
+  Range: [0.1718, 2.3364]
+  Mean: 0.4036
+
+Attention weight statistics (should sum to 1.0):
+  Range: [0.000511, 0.579061]
+  Sum: 1.000000
+  Mean: 0.090909
+
+  Goal: 1 edges
+    Attention: min=0.579061, max=0.579061, mean=0.579061, sum=0.579061
+    Distance: min=2.3364, max=2.3364, mean=2.3364
+
+  Obstacle: 10 edges
+    Attention: min=0.000511, max=0.091012, mean=0.042094, sum=0.420939
+    Distance: min=0.1718, max=0.3109, mean=0.2104
+
+✓ Plot saved to: /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+/attention_plots/attention_vs_distance_epi0_agent5_t50.png
+================================================================================
+
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ python test.py --epi 1 --area-size 4 -n 35 --obs 35 --no-video --env DoubleIntegrator --algo gcbf+ --log --cbf 0 --path /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+
+WARNING:2026-02-04 23:45:20,677:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+> Running test.py Namespace(num_agents=35, obs=35, area_size=4.0, max_step=None, path='/home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+', n_rays=32, alpha=1.0, max_travel=None, cbf=0, seed=1234, debug=False, cpu=False, u_ref=False, env='DoubleIntegrator', algo='gcbf+', step=None, epi=1, offset=0, no_video=True, nojit_rollout=False, log=True, dpi=100)
+number of agents to log:  35
+step:  1000
+jit rollout!
+Agent acceleration bounds alphai and alphaj 14.142136 14.142136
+Obstacle acceleration bounds 0.0
+state, node, edge lengths 257 257 257
+epi: 0, reward: -78.584, cost: 0.057, safe rate: 97.143%,finish rate: 51.429%, success rate: 51.429%
+reward: -78.584, min/max reward: -78.584/-78.584, cost: 0.057, min/max cost: 0.057/0.057, safe_rate: 97.143%, finish_rate: 51.429%, success_rate: 51.429%
+
+================================================================================
+ATTENTION ANALYSIS: Plotting attention weights vs distance
+================================================================================
+
+================================================================================
+Analyzing Attention for Agent 10 at Timestep 11
+================================================================================
+Graph extracted successfully
+  Number of nodes: 1191
+  Number of edges: 3570
+  Total attention weights: 3570
+
+================================================================================
+Analyzing Agent 10 - RECEIVER-BASED ATTENTION
+================================================================================
+Padding node ID: 1190
+Total nodes: 1191
+Total edges in graph: 3570
+Non-padding edges: 235
+
+Edges TO agent 10 (received from neighbors): 5
+Senders: [ 13  45 390 391 392]
+
+DEBUG: Determining edge types
+  agent_senders: [ 13  45 390 391 392]
+  node_types[agent_senders]: [0 1 2 2 2]
+  Edge type labels: ['agent', 'goal', 'obstacle', 'obstacle', 'obstacle']
+
+================================================================================
+Agent 10 at Timestep 11 - RESULTS
+================================================================================
+Total incoming edges: 5
+  From agents: 1
+  From goals: 1
+  From obstacles: 3
+
+Distance statistics:
+  Range: [0.2747, 3.0310]
+  Mean: 0.8461
+
+Attention weight statistics (should sum to 1.0):
+  Range: [0.006598, 0.846346]
+  Sum: 1.000000
+  Mean: 0.200000
+
+  Agent: 1 edges
+    Attention: min=0.075830, max=0.075830, mean=0.075830, sum=0.075830
+    Distance: min=0.2842, max=0.2842, mean=0.2842
+
+  Goal: 1 edges
+    Attention: min=0.846346, max=0.846346, mean=0.846346, sum=0.846346
+    Distance: min=3.0310, max=3.0310, mean=3.0310
+
+  Obstacle: 3 edges
+    Attention: min=0.006598, max=0.055838, mean=0.025941, sum=0.077824
+    Distance: min=0.2747, max=0.3211, mean=0.3052
+
+✓ Plot saved to: /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+/attention_plots/attention_vs_distance_epi0_agent10_t11.png
+================================================================================
+
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ python test.py --epi 1 --area-size 4 -n 35 --obs 35 --no-video --env DoubleIntegrator --algo gcbf+ --log --cbf 0 --path /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+
+WARNING:2026-02-04 23:48:12,330:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+> Running test.py Namespace(num_agents=35, obs=35, area_size=4.0, max_step=None, path='/home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+', n_rays=32, alpha=1.0, max_travel=None, cbf=0, seed=1234, debug=False, cpu=False, u_ref=False, env='DoubleIntegrator', algo='gcbf+', step=None, epi=1, offset=0, no_video=True, nojit_rollout=False, log=True, dpi=100)
+number of agents to log:  35
+step:  1000
+jit rollout!
+Agent acceleration bounds alphai and alphaj 14.142136 14.142136
+Obstacle acceleration bounds 0.0
+state, node, edge lengths 257 257 257
+epi: 0, reward: -78.584, cost: 0.057, safe rate: 97.143%,finish rate: 51.429%, success rate: 51.429%
+reward: -78.584, min/max reward: -78.584/-78.584, cost: 0.057, min/max cost: 0.057/0.057, safe_rate: 97.143%, finish_rate: 51.429%, success_rate: 51.429%
+
+================================================================================
+ATTENTION ANALYSIS: Plotting attention weights vs distance
+================================================================================
+
+================================================================================
+Analyzing Attention for Agent 20 at Timestep 99
+================================================================================
+Graph extracted successfully
+  Number of nodes: 1191
+  Number of edges: 3570
+  Total attention weights: 3570
+
+================================================================================
+Analyzing Agent 20 - RECEIVER-BASED ATTENTION
+================================================================================
+Padding node ID: 1190
+Total nodes: 1191
+Total edges in graph: 3570
+Non-padding edges: 380
+
+Edges TO agent 20 (received from neighbors): 11
+Senders: [  0  22  24  55 710 711 712 713 714 715 716]
+
+DEBUG: Determining edge types
+  agent_senders: [  0  22  24  55 710 711 712 713 714 715 716]
+  node_types[agent_senders]: [0 0 0 1 2 2 2 2 2 2 2]
+  Edge type labels: ['agent', 'agent', 'agent', 'goal', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle']
+
+================================================================================
+Agent 20 at Timestep 99 - RESULTS
+================================================================================
+Total incoming edges: 11
+  From agents: 3
+  From goals: 1
+  From obstacles: 7
+
+Distance statistics:
+  Range: [0.1241, 0.3966]
+  Mean: 0.3075
+
+Attention weight statistics (should sum to 1.0):
+  Range: [0.000019, 0.646735]
+  Sum: 1.000000
+  Mean: 0.090909
+
+  Agent: 3 edges
+    Attention: min=0.017924, max=0.305016, mean=0.115118, sum=0.345355
+    Distance: min=0.2277, max=0.3966, mean=0.3174
+
+  Goal: 1 edges
+    Attention: min=0.646735, max=0.646735, mean=0.646735, sum=0.646735
+    Distance: min=0.1241, max=0.1241, mean=0.1241
+
+  Obstacle: 7 edges
+    Attention: min=0.000019, max=0.001963, mean=0.001130, sum=0.007910
+    Distance: min=0.3026, max=0.3883, mean=0.3295
+
+✓ Plot saved to: /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+/attention_plots/attention_vs_distance_epi0_agent20_t99.png
+================================================================================
+
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ python test.py --epi 1 --area-size 4 -n 35 --obs 35 --no-video --env DoubleIntegrator --algo gcbf+ --log --cbf 0 --path /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+
+WARNING:2026-02-04 23:50:46,097:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+> Running test.py Namespace(num_agents=35, obs=35, area_size=4.0, max_step=None, path='/home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+', n_rays=32, alpha=1.0, max_travel=None, cbf=0, seed=1234, debug=False, cpu=False, u_ref=False, env='DoubleIntegrator', algo='gcbf+', step=None, epi=1, offset=0, no_video=True, nojit_rollout=False, log=True, dpi=100)
+number of agents to log:  35
+step:  1000
+jit rollout!
+Agent acceleration bounds alphai and alphaj 14.142136 14.142136
+Obstacle acceleration bounds 0.0
+state, node, edge lengths 257 257 257
+epi: 0, reward: -78.584, cost: 0.057, safe rate: 97.143%,finish rate: 51.429%, success rate: 51.429%
+reward: -78.584, min/max reward: -78.584/-78.584, cost: 0.057, min/max cost: 0.057/0.057, safe_rate: 97.143%, finish_rate: 51.429%, success_rate: 51.429%
+
+================================================================================
+ATTENTION ANALYSIS: Plotting attention weights vs distance
+================================================================================
+
+================================================================================
+Analyzing Attention for Agent 28 at Timestep 199
+================================================================================
+Graph extracted successfully
+  Number of nodes: 1191
+  Number of edges: 3570
+  Total attention weights: 3570
+
+================================================================================
+Analyzing Agent 28 - RECEIVER-BASED ATTENTION
+================================================================================
+Padding node ID: 1190
+Total nodes: 1191
+Total edges in graph: 3570
+Non-padding edges: 306
+
+Edges TO agent 28 (received from neighbors): 5
+Senders: [ 63 966 967 968 969]
+
+DEBUG: Determining edge types
+  agent_senders: [ 63 966 967 968 969]
+  node_types[agent_senders]: [1 2 2 2 2]
+  Edge type labels: ['goal', 'obstacle', 'obstacle', 'obstacle', 'obstacle']
+
+================================================================================
+Agent 28 at Timestep 199 - RESULTS
+================================================================================
+Total incoming edges: 5
+  From agents: 0
+  From goals: 1
+  From obstacles: 4
+
+Distance statistics:
+  Range: [0.0919, 0.3902]
+  Mean: 0.3159
+
+Attention weight statistics (should sum to 1.0):
+  Range: [0.000005, 0.975661]
+  Sum: 1.000000
+  Mean: 0.200000
+
+  Goal: 1 edges
+    Attention: min=0.975661, max=0.975661, mean=0.975661, sum=0.975661
+    Distance: min=0.0919, max=0.0919, mean=0.0919
+
+  Obstacle: 4 edges
+    Attention: min=0.000005, max=0.014242, mean=0.006085, sum=0.024339
+    Distance: min=0.3570, max=0.3902, mean=0.3719
+
+✓ Plot saved to: /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+/attention_plots/attention_vs_distance_epi0_agent28_t199.png
+================================================================================
+
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ python test.py --epi 1 --area-size 4 -n 35 --obs 35 --no-video --env DoubleIntegrator --algo gcbf+ --log --cbf 0 --path /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+
+WARNING:2026-02-04 23:52:55,431:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+> Running test.py Namespace(num_agents=35, obs=35, area_size=4.0, max_step=None, path='/home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+', n_rays=32, alpha=1.0, max_travel=None, cbf=0, seed=1234, debug=False, cpu=False, u_ref=False, env='DoubleIntegrator', algo='gcbf+', step=None, epi=1, offset=0, no_video=True, nojit_rollout=False, log=True, dpi=100)
+number of agents to log:  35
+step:  1000
+jit rollout!
+Agent acceleration bounds alphai and alphaj 14.142136 14.142136
+Obstacle acceleration bounds 0.0
+state, node, edge lengths 257 257 257
+epi: 0, reward: -78.584, cost: 0.057, safe rate: 97.143%,finish rate: 51.429%, success rate: 51.429%
+reward: -78.584, min/max reward: -78.584/-78.584, cost: 0.057, min/max cost: 0.057/0.057, safe_rate: 97.143%, finish_rate: 51.429%, success_rate: 51.429%
+
+================================================================================
+ATTENTION ANALYSIS: Plotting attention weights vs distance
+================================================================================
+
+================================================================================
+Analyzing Attention for Agent 19 at Timestep 41
+================================================================================
+Graph extracted successfully
+  Number of nodes: 1191
+  Number of edges: 3570
+  Total attention weights: 3570
+
+================================================================================
+Analyzing Agent 19 - RECEIVER-BASED ATTENTION
+================================================================================
+Padding node ID: 1190
+Total nodes: 1191
+Total edges in graph: 3570
+Non-padding edges: 322
+
+Edges TO agent 19 (received from neighbors): 9
+Senders: [  1  54 678 679 680 681 682 683 684]
+
+DEBUG: Determining edge types
+  agent_senders: [  1  54 678 679 680 681 682 683 684]
+  node_types[agent_senders]: [0 1 2 2 2 2 2 2 2]
+  Edge type labels: ['agent', 'goal', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle', 'obstacle']
+
+================================================================================
+Agent 19 at Timestep 41 - RESULTS
+================================================================================
+Total incoming edges: 9
+  From agents: 1
+  From goals: 1
+  From obstacles: 7
+
+Distance statistics:
+  Range: [0.2097, 1.2474]
+  Mean: 0.3827
+
+Attention weight statistics (should sum to 1.0):
+  Range: [0.000053, 0.543491]
+  Sum: 1.000000
+  Mean: 0.111111
+
+  Agent: 1 edges
+    Attention: min=0.000053, max=0.000053, mean=0.000053, sum=0.000053
+    Distance: min=0.4224, max=0.4224, mean=0.4224
+
+  Goal: 1 edges
+    Attention: min=0.543491, max=0.543491, mean=0.543491, sum=0.543491
+    Distance: min=1.2474, max=1.2474, mean=1.2474
+
+  Obstacle: 7 edges
+    Attention: min=0.001793, max=0.107508, mean=0.065208, sum=0.456456
+    Distance: min=0.2097, max=0.3691, mean=0.2534
+
+✓ Plot saved to: /home/srglab/Probed_GCBFplus/Probed_GCBFplus/pretrained/DoubleIntegrator/gcbf+/attention_plots/attention_vs_distance_epi0_agent19_t41.png
+================================================================================
+
+(gcbfplus) srglab@EN4232889UL:~/Probed_GCBFplus/Probed_GCBFplus/AttentionPlots$ 
